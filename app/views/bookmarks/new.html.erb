@@ -1,5 +1,5 @@
 <%= simple_form_for([@list, @bookmark]) do |f| %>
   <%= f.input :movie_id, as: :select, collection: Movie.all.order(:title) %>
   <%= f.input :comment %>
-  <%= f.submit "Guardar lista" %>
+  <%= f.submit "Guardar peli" %>
 <% end %>
